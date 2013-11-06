@@ -149,6 +149,9 @@ PRODUCT_PACKAGES += \
 # Prepatch to fix BT/WiFi bus lockups
 PRODUCT_COPY_FILES += \
     device/htc/m7-common/bluetooth/bcm4335_prepatch.hcd:system/vendor/firmware/bcm4335_prepatch.hcd
+    
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf
 
 # Permissions
 PRODUCT_COPY_FILES += \
