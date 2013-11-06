@@ -32,4 +32,7 @@
          Writes the phone apps status on "answer call" and on "hangup" to the specified proximity sysfs node. -->
     <string name="phone_app_status_file">"/sys/class/optical_sensors/proximity/PhoneApp_status"</string>
 
+    <!-- Show enabled lte option for lte device -->
+    <bool name="config_enabled_lte" translatable="false">true</bool>
+
 </resources>
