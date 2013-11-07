@@ -178,6 +178,8 @@
 
     <!-- Minimum screen brightness allowed by the power manager. -->
     <integer name="config_screenBrightnessDim">10</integer>
+    
+    
 
     <!-- Enable Wifi Display / Miracast Support. -->
     <bool name="config_enableWifiDisplay">true</bool>
@@ -220,6 +222,39 @@
         <item>1</item>
         <item>5</item>
         <item>7</item>
+    </integer-array>
+    
+    <!-- Indicate whether to allow the device to suspend when the screen is off
+     due to the proximity sensor.  This resource should only be set to true
+     if the sensor HAL correctly handles the proximity sensor as a wake-up source.
+     Otherwise, the device may fail to wake out of suspend reliably.
+     The default is false. -->
+    <bool name="config_suspendWhenScreenOffDueToProximity">true</bool>
+    
+    <!-- Make things go fast -->
+    <bool name="config_ui_enableFadingMarquee">false</bool>
+    
+    
+    <!-- HTC One threshold seems to be 10, as in 10 is 0 -->
+    <!-- these values are the equivilant of the hammerhead, with that threshold taken into mind -->
+    <!-- Vibrator pattern for feedback about a long screen/key press -->
+    <integer-array name="config_longPressVibePattern">
+        <item>10</item>
+        <item>17</item>
+        <item>20</item>
+    </integer-array>
+    
+    <!-- this one is different from hammerhead, cause we have virtual key's that should feel a stronger -->
+    <!-- Vibrator pattern for feedback about touching a virtual key -->
+    <integer-array name="config_virtualKeyVibePattern">
+        <item>10</item>
+        <item>20</item>
+        <item>25</item>
+    </integer-array>
+    
+    <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
+    <integer-array name="config_keyboardTapVibePattern">
+        <item>20</item>
     </integer-array>
 
     <!-- If this value is true, The mms content-disposition field is supported correctly.
